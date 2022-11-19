@@ -37,10 +37,8 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-stack_t *push(stack_t **head, const int n);
-int fopen_error(char *filename);
-int user_error(void);
-int malloc_error(void);
+void monty_push(stack_t **stack, unsigned int line_number);
+void monty_pull(stack_t **stack, unsigned int line_number);
 int _strlen(char *s);
 
 #endif
