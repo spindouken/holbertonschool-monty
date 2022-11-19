@@ -3,7 +3,7 @@
 /**
  * monty_push - add to top of stack
  * @stack: stack
- * @n: integer variable
+ * @line_number: 
  * Return: the address of the new element, or NULL on failure
  */
 
