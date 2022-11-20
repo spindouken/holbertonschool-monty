@@ -9,15 +9,15 @@
 
 void monty_free(stack_t *stack)
 {
-	stack_t *temp;
+	stack_t *python;
 
 	if (stack == NULL)
 		return;
 	while (stack != NULL)
 	{
-		temp = stack;
+		python = stack;
 		stack = stack->next;
-		free(temp);
+		free(python);
 	}
 	free(stack);
 }
