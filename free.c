@@ -9,15 +9,31 @@
 
 void free_monty(stack_t *stack)
 {
-	stack_t *python;
+	stack_t *python = NULL;
 
-	if (stack == NULL)
-		return;
-	while (stack != NULL)
+	python = stack;
+
+	while (python != NULL)
 	{
-		python = stack;
-		stack = stack->next;
+		free_monty(python->next);
 		free(python);
 	}
-	free(stack);
+}
+
+/**
+ * freestack - Frees mallocs and close files
+ * @stack: Stack
+ */
+
+void freestack(stack_t **stack)
+{
+	stack_t *current = *stack;
+
+	for (; current; current = *stack)
+	{
+		*stack = (*stack)->next;
+		free(current);
+	}
+	fclose(global.fd);
+	free(global.line);
 }
