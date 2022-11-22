@@ -3,7 +3,7 @@
 int value;
 
 /**
- * monty_node - add new node to top of
+ * add_node - add new node to top of
  * stack_t stack (doubly linked list)
  * @n: integer variable
  * Return: new node
