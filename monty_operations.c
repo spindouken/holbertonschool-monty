@@ -46,7 +46,7 @@ void monty_push(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * _pall - print all nodes of stack
+ * monty_pall - print all nodes of stack
  * @stack: stack
  * @n: value variable
  * Return: void
