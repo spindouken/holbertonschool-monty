@@ -3,10 +3,10 @@
 global_t global = {NULL, NULL};
 
 /**
- * main - Entry point
+ * main - monty starter
  * @argc: argument count
  * @argv: argument variable
- * Return:
+ * Return: 0 on success
  */
 
 int main(int argc, char *argv[])

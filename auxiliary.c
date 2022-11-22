@@ -3,7 +3,7 @@
 /**
  * int_check - Checks for int 0 through 9
  * Return: 0 or 1
- * @c:
+ * @c: int to check (ascii value)
  */
 
 int int_check(char *c)

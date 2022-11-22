@@ -8,6 +8,7 @@ int value;
  * @n: integer variable
  * Return: new node
  */
+
 stack_t *add_node(int n)
 {
 	stack_t *node = NULL;

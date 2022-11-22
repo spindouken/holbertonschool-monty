@@ -2,8 +2,8 @@
 
 /**
  * monty_call - function pointer that takes arg of f in struct
- * @stack:
- * @arg:
+ * @stack: stack
+ * @arg: argument
  * @item: token
  * @count: line
  * Return: 0 on success
@@ -16,6 +16,12 @@ int monty_call(stack_t **stack, char *arg, char *item, int count)
 	instruction_t call[] = {
 		{"push", monty_push},
 		{"pall", monty_pall},
+		{"pint", monty_pint},
+		{"pop", monty_pop},
+		{"swap", monty_swap},
+		{"add", monty_add},
+		{"nop", monty_nop},
+
 		{NULL, NULL}
 	};
 
@@ -26,7 +32,7 @@ int monty_call(stack_t **stack, char *arg, char *item, int count)
 			if (!strcmp(arg, "push"))
 			{
 				if (int_check(item) == 1)
-						value = atoi(item);
+					value = atoi(item);
 				else
 					return (1);
 			}
