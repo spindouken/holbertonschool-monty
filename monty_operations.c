@@ -52,7 +52,7 @@ void monty_push(stack_t **stack, unsigned int line_number)
  * Return: void
  */
 
-void _pall(stack_t **stack, unsigned int n)
+void monty_pall(stack_t **stack, unsigned int n)
 {
 	stack_t *current = NULL;
 	(void)n;
