@@ -60,6 +60,7 @@ int monty_call(stack_t **stack, char *arg, char *item, int count);
 void monty_push(stack_t **stack, unsigned int line_number);
 void monty_pall(stack_t **stack, unsigned int line_number);
 void free_monty(stack_t *stack);
+void freestack(stack_t **stack);
 void push_error(FILE *fd, char *line, stack_t *stack, int count);
 void ins_error(FILE *fd, char *line, stack_t *stack, char *count, int item);
 int _strlen(char *s);
