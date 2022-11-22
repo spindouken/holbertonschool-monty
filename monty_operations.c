@@ -44,3 +44,24 @@ void monty_push(stack_t **stack, unsigned int line_number)
 		(*stack)->prev = node;
 	*stack = node;
 }
+
+/**
+ * _pall - print all nodes of stack
+ * @stack: stack
+ * @n: value variable
+ * Return: void
+ */
+
+void _pall(stack_t **stack, unsigned int n)
+{
+	stack_t *current = NULL;
+	(void)n;
+
+	current = *stack;
+
+	while (current != NULL)
+	{
+		dprintf(STDOUT_FILENO, "%d\n", current->n);
+		current = current->next;
+	}
+}

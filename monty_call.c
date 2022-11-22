@@ -16,11 +16,6 @@ int monty_call(stack_t **stack, char *arg, char *item, int count)
 	instruction_t call[] = {
 		{"push", monty_push},
 		{"pall", monty_pall},
-		{"pint", monty_pint},
-		{"pop", monty_pop},
-		{"swap", monty_swap},
-		{"add", monty_add},
-		{"nop", monty_nop},
 		{NULL, NULL}
 	};
 
