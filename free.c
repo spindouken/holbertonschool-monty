@@ -15,8 +15,9 @@ void free_monty(stack_t *stack)
 
 	while (python != NULL)
 	{
-		free_monty(python->next);
-		free(python);
+		python = stack->next;
+		free(stack);
+		stack = python;
 	}
 }
 
