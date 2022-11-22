@@ -27,12 +27,12 @@ void free_monty(stack_t *stack)
 
 void freestack(stack_t **stack)
 {
-	stack_t *current = *stack;
+	stack_t *python = *stack;
 
-	for (; current; current = *stack)
+	for (; python; python = *stack)
 	{
 		*stack = (*stack)->next;
-		free(current);
+		free(python);
 	}
 	fclose(global.fd);
 	free(global.line);
